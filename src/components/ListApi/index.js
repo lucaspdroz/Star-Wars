@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Character } from '../Character'
 
+axios.create({
+    baseURL:"https://swapi.dev/api/"
+})
+
 const ListPeople = () => {
     const [listCharacters, setListCharacters] = useState([]);
     useEffect(() => {
