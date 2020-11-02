@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Character = ({ character }) => {
 
-    const { name, mass, homeworld, birth_year, films } = character
+    const { name, mass, homeworld, birth_year, film } = character
 
     return (
         <div>
@@ -10,7 +10,7 @@ export const Character = ({ character }) => {
             <p>Mass: {mass}</p>
             <p>Homeworld: {homeworld}</p>
             <p>Birth year: {birth_year}</p>
-            <p>Films: {films}</p>
+            <p>Films: {film}</p>
         </div>
     )
 }
