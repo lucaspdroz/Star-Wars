@@ -6,16 +6,25 @@ const port = process.env.PORT || 3001
 app.use(cors())
 
 app.use(express.static('public'));
-app.use('/images', express.static(__dirname + 'public'));
 
 app.get('/', (req, res) => {
     res.send(
         {
             "birth_year": "19BBY",
             "eye_color": "Blue",
-            "film": "/Movie/1/",
+            "char_img": "http://localhost:3001/images/luke.jpg",
+            "film": "http://localhost:3001/images/2.jpg",
             "films": [
-                "https://swapi.dev/api/films/2"
+                {
+                    "title": "the phantom menance",
+                    "id_chapter": "I",
+                    "cover": "http://localhost:3001/images/1.jpg",
+                },
+                {
+                    "title": "attack of the clones",
+                    "id_chapter": "II",
+                    "cover": "http://localhost:3001/images/2.jpg",
+                },
             ],
             "gender": "Male",
             "hair_color": "Blond",
