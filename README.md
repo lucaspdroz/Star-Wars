@@ -1,10 +1,9 @@
 # Star-Wars
 A Project to introduce API's requests and rebels my dark-side! 👀
 
+# Project Strucutre
 
-# To Run the BFF (Middleware) 🛠
-
-From the `Root` path of the project
+The `Root` path of Project:
 
 ```
 Root
@@ -12,6 +11,10 @@ Root
  |__ /frontend
  README.md
 ```
+
+# To Run the BFF (Middleware) 🛠
+
+
 
 Go to Path
 ```
