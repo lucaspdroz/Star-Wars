@@ -1,0 +1,24 @@
+.film {
+    width: 250px;
+    height: 375px;
+    text-align: center;
+    background-color: blue;
+
+    img {
+        height: 350px;
+        padding: 3rem 1rem;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .text,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: capitalize;
+    }
+}

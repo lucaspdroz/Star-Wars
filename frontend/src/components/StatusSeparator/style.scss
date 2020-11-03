@@ -1,0 +1,23 @@
+.separator {
+    display: grid;
+    width: 300px;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+
+    .middle::before {
+        content: "";
+        position: absolute;
+        border-left: 2px solid grey;
+        height: 50px;
+        border-radius: 100px;
+    }
+
+    .middle::after {
+        content: "";
+        position: absolute;
+        border-right: 2px solid red;
+        border-radius: 100px;
+        height: 50px;
+    }
+}

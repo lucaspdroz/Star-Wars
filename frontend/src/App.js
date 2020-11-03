@@ -1,4 +1,4 @@
-import './app.css';
+import './app.scss';
 
 import ListCharacter from './components/ListCharacter'
 

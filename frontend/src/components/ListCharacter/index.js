@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Character } from '../Character'
+import { CardCharacter } from '../CardCharacter'
 
 const ListCharacter = () => {
     const [listCharacters, setListCharacters] = useState([]);
@@ -14,10 +14,9 @@ const ListCharacter = () => {
     }, [])
 
     
-
     return (
         <div className="wrapper">
-            <Character character={listCharacters} />
+            <CardCharacter character={listCharacters} />
         </div>
     )
 }

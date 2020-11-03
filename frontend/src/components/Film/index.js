@@ -1,4 +1,4 @@
-import './film.css';
+import './style.scss';
 
 export default function Film({ films }) {
 
@@ -6,11 +6,11 @@ export default function Film({ films }) {
 
     return (
         <div className="film">
-            <div className="my-cover" style={{ backgroundImage: `url(${cover})` }}></div>
+            <img src={cover} alt={title} />
             <h3 className="idChapter">{id_chapter}</h3>
             <h2 className="">{title}</h2>
             {/* Deprecated tests */}
-            {/* <img src={cover} alt={title} />  // For a  better acessibility*/}
+            {/* <div className="my-cover" style={{ backgroundImage: `url(${cover})` }}></div> // For a  better acessibility*/}
             {/* <audio src={music} controls /> */}
         </div>
     )
