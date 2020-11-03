@@ -12,9 +12,9 @@ app.get('/', (req, res) => {
         {
             "birth_year": "19BBY",
             "eye_color": "Blue",
-            "char_img": "http://localhost:3001/images/luke.jpg",
+            "char_img": "http://localhost:3001/images/luke.webp",
             "height":"172",
-            "actor":"Mark hamill",
+            "actor":"mark hamill",
             "films": [
                 {
                     "title": "attack of the clones",

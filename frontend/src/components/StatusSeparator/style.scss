@@ -1,16 +1,17 @@
 .separator {
     display: grid;
-    width: 300px;
-    padding: 10px;
+    width: 310px;
+    padding: 5px;
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
 
-    .middle::before {
-        content: "";
-        position: absolute;
-        border-left: 2px solid grey;
+    .item {
+        margin: 5px;
+        border-right: 2px solid grey;
         height: 50px;
-        border-radius: 100px;
+        &:last-child {
+            border: none;
+        }
     }
 
     .middle::after {

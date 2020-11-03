@@ -5,14 +5,15 @@ import './character.scss'
 
 export const CardCharacter = ({ character }) => {
 
-    const { char_img, name, mass, homeworld, birth_year, actor, height, films } = character
+    const { char_img, name, actor, mass, homeworld, birth_year, height, films } = character
 
     return (
         <div className="card-character">
+            
             <div className="bg-character" style={{ backgroundImage: `url(${char_img})` }}></div>
-            {/* <img src={char_img} alt={name} /> */}
+            <div className="fade"></div>
             <AtomSeparator text={name} />
-            <p>{actor}</p>
+            <AtomSeparator text={actor} />
             <StatusSeparator mass={mass} birth_year={birth_year} height={height} className="item-content" />
             {/* <p>Homeworld: {homeworld}</p> */}
 
