@@ -1,7 +1,8 @@
 .card-character {
-    width: 100vw;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    background-color: #91c5ea;
 
     .bg-character {
         width: 100vw;
@@ -23,17 +24,14 @@
         align-items: center;
         margin: auto;
     }
+
     .movie-wrapper {
         display: flex;
-        flex-wrap: wrap;
+        position: relative;
         width: 100%;
-        height: calc(375px + 120px);
-        background-color: blue;
         overflow-x: scroll;
-        overflow-y: hidden;
-
         .movie-card {
-            padding: 10px;
+            margin: 15px auto;
         }
     }
 }

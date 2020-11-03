@@ -1,9 +1,9 @@
 import './style.scss'
 
-const AtomSeparator = ({ text }) => {
+const AtomSeparator = ({ text, size }) => {
     return (
         <div className="title-card">
-            {text}
+            {text} {size}
         </div>
     );
 }

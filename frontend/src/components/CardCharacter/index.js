@@ -17,7 +17,8 @@ export const CardCharacter = ({ character }) => {
             <StatusSeparator mass={mass} birth_year={birth_year} height={height} className="item-content" />
             {/* <p>Homeworld: {homeworld}</p> */}
 
-            {/* <div className="movie-wrapper">
+            <AtomSeparator text="filmes" />
+             <div className="movie-wrapper">
                 <div className="movie-card">
                     <Film films={films[0]} />
                 </div>
@@ -33,7 +34,9 @@ export const CardCharacter = ({ character }) => {
                 <div className="movie-card">
                     <Film films={films[4]} />
                 </div>
-            </div> */}
-        </div >
+            </div>
+            <AtomSeparator text="Outros Personagens" />
+            
+        </div>
     )
 }

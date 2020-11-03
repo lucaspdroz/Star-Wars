@@ -1,15 +1,16 @@
 .separator {
     display: grid;
     width: 310px;
-    padding: 5px;
     grid-template-columns: repeat(3, 1fr);
-    margin: auto;
+    margin: 10px auto;
 
     .item {
         margin: 5px;
         border-right: 2px solid grey;
         height: 50px;
+        
         &:last-child {
+            margin: 0 5px;
             border: none;
         }
     }
