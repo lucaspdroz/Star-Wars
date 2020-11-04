@@ -3,12 +3,12 @@ import axios from 'axios';
 import { CardCharacter } from '../CardCharacter'
 
 const ListCharacter = () => {
-    const [listCharacters, setListCharacters] = useState([]);
+    const [listCharacters, setListCharacters] = useState({});
 
     useEffect(() => {
         axios.get('http://localhost:3001/')
             .then(response => {
-                console.log(response.data);
+                // console.log("Será?", response.data);
                 setListCharacters(response.data);
             })
     }, [])

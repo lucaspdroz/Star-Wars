@@ -3,9 +3,9 @@ import './style.scss';
 import AtomFilm from '../AtomFilm'
 import crawlSvg from '../../assets/crawl.svg'
 
-export default function Film({ films }) {
+export default function Film({ film }) {
 
-    const { title, cover, id_chapter, cralw } = films
+    const { title, cover, id_chapter, cralw } = film
 
     return (
         <div className="film">
