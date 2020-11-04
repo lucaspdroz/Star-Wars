@@ -3,9 +3,9 @@ import './style.scss';
 import AtomFilm from '../AtomFilm'
 import crawlSvg from '../../assets/crawl.svg'
 
-export default function Film({ films }) {
+export default function Film({ film }) {
 
-    const { cover, id_chapter, title, music, cralw } = films
+    const { title, cover, id_chapter, cralw } = film
 
     return (
         <div className="film">
@@ -15,11 +15,7 @@ export default function Film({ films }) {
             </div>
             <h3 className="idChapter">{id_chapter}</h3>
             <h2 className="title">{title}</h2>
-
-            {/* Deprecated tests */}
-            {/* <div className="my-cover" style={{ backgroundImage: `url(${cover})` }}></div> // For a  better acessibility*/}
             <p>{cralw}</p>
-            {/* <audio src={music} controls /> */}
         </div>
     )
 }
