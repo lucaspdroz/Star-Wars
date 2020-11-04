@@ -1,0 +1,25 @@
+.separator {
+    display: grid;
+    width: 310px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px auto;
+
+    .item {
+        margin: 5px;
+        border-right: 2px solid grey;
+        height: 50px;
+        
+        &:last-child {
+            margin: 0 5px;
+            border: none;
+        }
+    }
+
+    .middle::after {
+        content: "";
+        position: absolute;
+        border-right: 2px solid red;
+        border-radius: 100px;
+        height: 50px;
+    }
+}

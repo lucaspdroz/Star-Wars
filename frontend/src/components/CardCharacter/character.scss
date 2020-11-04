@@ -1,0 +1,41 @@
+@import "../../app.scss";
+
+.card-character {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--yellow);
+    background-color: var(--dark);
+
+    .bg-character {
+        width: 100vw;
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .fade {
+        width: 100vw;
+        height: 50px;
+        position: relative;
+        top: -50px;
+        background: linear-gradient(rgba(0, 0, 0, 0), var(--dark));
+    }
+
+    .item-content {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .movie-wrapper {
+        display: flex;
+        position: relative;
+        width: 100%;
+        overflow-x: scroll;
+        .movie-card {
+            margin: 15px auto;
+        }
+    }
+}
