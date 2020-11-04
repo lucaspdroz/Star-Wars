@@ -1,11 +1,32 @@
 # Star-Wars
+
 A Project to introduce API's requests and rebels my dark-side! 👀
+Drawed UI made [Link to Figma UI Project](https://www.figma.com/file/hMpSF8jUBbzKXsp7OiBKJf/Star-Wars?node-id=0%3A1)
+
+### RestifulAPI - BFF
+- [x] express
+- [x] cors
+- [x] axios
+</br>
+
+### Frontend
+- [x] React
+- [x] React-Components
+- [x] Funtional Components
+- [x] Reused Component
+- [x] props params
+
+### Styles
+- [x] Sass
+
+### Extras
+- [x] spread operator
+- [ ] Routes
+- [ ] Pages
 
 # Figma Project
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FhMpSF8jUBbzKXsp7OiBKJf%2FStar-Wars%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
-
-[If you have some problem to visualize the iframe](https://www.figma.com/file/hMpSF8jUBbzKXsp7OiBKJf/Star-Wars?node-id=0%3A1)
+[Link to Figma UI - Lucas Drozdowski](https://www.figma.com/file/hMpSF8jUBbzKXsp7OiBKJf/Star-Wars?node-id=0%3A1)
 
 # Project Strucutre
 
