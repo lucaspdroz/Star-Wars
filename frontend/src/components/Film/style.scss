@@ -1,10 +1,13 @@
 .film {
     width: 250px;
     text-align: center;
-    // background-color: red;
+
+    .banner{
+        height: 350px;
+        position: relative;
+    }
 
     img {
-        height: 350px;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;

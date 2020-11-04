@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
                     "id_chapter": "II",
                     "cover": "http://localhost:3001/images/2.jpg",
                     "music": "http://localhost:3001/music/MainTheme.mp3",
-                    "cralw": ""
+                    "cralw": "There is unrest in the Galactic\r\nSenate. Several thousand solar\r\nsystems have declared their\r\nintentions to leave the Republic.\r\n\r\nThis separatist movement,\r\nunder the leadership of the\r\nmysterious Count Dooku, has\r\nmade it difficult for the limited\r\nnumber of Jedi Knights to maintain \r\npeace and order in the galaxy.\r\n\r\nSenator Amidala, the former\r\nQueen of Naboo, is returning\r\nto the Galactic Senate to vote\r\non the critical issue of creating\r\nan ARMY OF THE REPUBLIC\r\nto assist the overwhelmed\r\nJedi...."
                 },
                 {
                     "title": "a new hope",
@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
                     "id_chapter": "III",
                     "cover": "http://localhost:3001/images/3.jpg",
                     "music": "http://localhost:3001/music/MainTheme.mp3",
-                    "cralw": ""
+                    "cralw": "War! The Republic is crumbling\r\nunder attacks by the ruthless\r\nSith Lord, Count Dooku.\r\nThere are heroes on both sides.\r\nEvil is everywhere.\r\n\r\nIn a stunning move, the\r\nfiendish droid leader, General\r\nGrievous, has swept into the\r\nRepublic capital and kidnapped\r\nChancellor Palpatine, leader of\r\nthe Galactic Senate.\r\n\r\nAs the Separatist Droid Army\r\nattempts to flee the besieged\r\ncapital with their valuable\r\nhostage, two Jedi Knights lead a\r\ndesperate mission to rescue the\r\ncaptive Chancellor...."
                 },
             ],
             "gender": "Male",
