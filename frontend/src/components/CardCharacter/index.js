@@ -3,9 +3,6 @@ import './character.scss'
 import Film from '../Film'
 import StatusSeparator from '../StatusSeparator'
 import AtomSeparator from '../AtomSeparator'
-import Button from '../AtomButton'
-import arrow from '../../assets/arrow.svg'
-
 
 export const CardCharacter = ({ character }) => {
 
@@ -13,9 +10,6 @@ export const CardCharacter = ({ character }) => {
 
     return (
         <div className="card-character">
-
-            <Button svg={arrow}></Button>
-
             <div className="bg-character" style={{ backgroundImage: `url(${char_img})` }}></div>
             <div className="fade"></div>
             <AtomSeparator text={name} />
@@ -23,22 +17,18 @@ export const CardCharacter = ({ character }) => {
             <StatusSeparator mass={mass} birth_year={birth_year} height={height} className="item-content" />
 
             <AtomSeparator text="filmes" />
+
             <div className="movie-wrapper">
-                {/* <div className="movie-card">
-                    <Film films={films[0]} />
-                </div>
-                <div className="movie-card">
-                    <Film films={films[1]} />
-                </div>
-                <div className="movie-card">
-                    <Film films={films[2]} />
-                </div>
-                <div className="movie-card">
-                    <Film films={films[3]} />
-                </div>
-                <div className="movie-card">
-                    <Film films={films[4]} />
-                </div> */}
+                {
+                    films.map(film => {
+                        return (
+                            <div className="movie-card">
+                                <Film films={film} />
+                            </div>
+                        )
+                    })
+                }
+
             </div>
             <AtomSeparator text="Outros Personagens" />
 

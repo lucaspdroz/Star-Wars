@@ -1,15 +1,22 @@
 .button {
     width: 200px;
     height: 60px;
-    
+
     border: none;
     background-color: var(--yellow);
     border-radius: 100px;
     position: relative;
     top: -100px;
-    
+
+    cursor: pointer;
+
     .btn-svg {
         padding: 10px;
         width: 90%;
+    }
+
+    &:hover {
+        transition: ease-in-out .3s;
+        background-color: var(--dark-yellow);
     }
 }
