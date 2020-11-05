@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
-import AtomCrawlText from '../AtomCrawlText'
+import React from 'react'
+import './style.scss';
 
-export default function Modal({ children }) {
+export default function Modal({ children, onClose = () => { } }) {
     return (
-        <>
-            {/* <button onClick={() => setIsVisible(false)}>close</button> */}
+        <div className="modal">
             <div className="content">
+                <button onClick={onClose}>Pular você pode</button>
                 {children}
             </div>
-            {/* <AtomCrawlText crawl={crawl} /> */}
-        </>
+        </div>
     )
 }
