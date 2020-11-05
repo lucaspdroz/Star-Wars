@@ -1,9 +1,13 @@
+import { useState } from 'react'
 import './character.scss'
 import Film from '../Film'
 import StatusSeparator from '../StatusSeparator'
 import AtomSeparator from '../AtomSeparator'
+import Modal from '../Modal'
 
 export const CardCharacter = ({ character }) => {
+
+    const [isVisible, setIsVisible] = useState(false);
 
     CardCharacter.defaultProps = {
         films: []
@@ -29,6 +33,12 @@ export const CardCharacter = ({ character }) => {
             <AtomSeparator text={actor} />
             <StatusSeparator mass={mass} birth_year={birth_year} height={height} className="item-content" />
             <AtomSeparator text="filmes" />
+
+            <button onClick={() => setIsVisible(true)}>Open modal</button>
+
+            {
+                isVisible ? <Modal><h1>Bla</h1></Modal> : null
+            }
 
             <div className="movie-wrapper">
                 {

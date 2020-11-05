@@ -1,11 +1,11 @@
 import './style.scss';
-
 import AtomFilm from '../AtomFilm'
 import crawlSvg from '../../assets/crawl.svg'
 
 export default function Film({ film }) {
 
-    const { title, cover, id_chapter, cralw } = film
+    const { title, cover, id_chapter, crawl } = film
+
 
     return (
         <div className="film">
@@ -15,7 +15,9 @@ export default function Film({ film }) {
             </div>
             <h3 className="idChapter">{id_chapter}</h3>
             <h2 className="title">{title}</h2>
-            <p>{cralw}</p>
+
+            {/* <AtomCrawlText title={title} id_chapter={id_chapter} crawl={crawl} /> */}
+
         </div>
     )
 }

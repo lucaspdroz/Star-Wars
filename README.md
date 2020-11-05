@@ -3,6 +3,8 @@
 A Project to introduce API's requests and rebels my dark-side! 👀
 Drawed UI made [Link to Figma UI Project](https://www.figma.com/file/hMpSF8jUBbzKXsp7OiBKJf/Star-Wars?node-id=0%3A1)
 
+<a href="https://www.figma.com/file/hMpSF8jUBbzKXsp7OiBKJf/Star-Wars?node-id=0%3A1" target="_blank"><img src='https://i.imgur.com/Z3wtGT2.jpg' alt="mockup"></a>
+
 ### RestifulAPI - BFF
 - [x] express
 - [x] cors
@@ -77,3 +79,10 @@ Start the project
 ```
 yarn start
 ```
+
+<div align="center">
+<h4>Contact me 😉</h4>
+
+![twetter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FLucaspdroz)
+
+</div>

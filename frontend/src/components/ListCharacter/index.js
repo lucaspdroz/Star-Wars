@@ -6,7 +6,7 @@ const ListCharacter = () => {
     const [listCharacters, setListCharacters] = useState({});
 
     useEffect(() => {
-        axios.get('http://localhost:3001/')
+        axios.get('http://localhost:3001/character')
             .then(response => {
                 // console.log("Será?", response.data);
                 setListCharacters(response.data);
