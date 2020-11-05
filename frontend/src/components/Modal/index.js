@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss';
 
-export default function Modal({ crawl, children, onClose = () => { } }) {
+export default function Modal({ children, onClose = () => { } }) {
     return (
         <div className="modal">
             <div className="content">
