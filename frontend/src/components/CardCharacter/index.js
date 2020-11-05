@@ -3,6 +3,7 @@ import './character.scss'
 import Film from '../Film'
 import StatusSeparator from '../StatusSeparator'
 import AtomSeparator from '../AtomSeparator'
+import AtomCrawlText from '../AtomCrawlText'
 import Modal from '../Modal'
 
 export const CardCharacter = ({ character }) => {
@@ -27,17 +28,18 @@ export const CardCharacter = ({ character }) => {
     return (
         <div className="card-character">
             <div className="bg-character" style={{ backgroundImage: `url(${char_img})` }}></div>
-            <div className="fade"></div>
-
-            <h1>{name}</h1>
-            <h2>{actor}</h2>
+            <div className="char-fade"></div>
+            <div className="character-stats">
+                <h1>{name}</h1>
+                <h2>{actor}</h2>
+            </div>
             <StatusSeparator mass={mass} birth_year={birth_year} height={height} className="item-content" />
             <AtomSeparator text="filmes" />
 
             <button onClick={() => setIsVisible(true)}>Open modal</button>
 
             {
-                isVisible ? <Modal onClose={() => setIsVisible(false)}><h1>Bla</h1></Modal> : null
+                isVisible ? <Modal onClose={() => setIsVisible(false)}><AtomCrawlText title={films[0].title} id_chapter={films[0].id_chapter} crawl={films[0].crawl}></AtomCrawlText></Modal> : null
             }
 
             <div className="movie-wrapper">
@@ -46,6 +48,6 @@ export const CardCharacter = ({ character }) => {
                 }
             </div>
             <AtomSeparator text="Outros Personagens" />
-        </div>
+        </div >
     )
 }

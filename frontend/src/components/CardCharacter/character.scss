@@ -15,7 +15,18 @@
         background-repeat: no-repeat;
     }
 
-    .fade {
+    .character-stats{
+        text-align: center;
+
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+
+    .char-fade {
         width: 100vw;
         height: 50px;
         position: relative;
