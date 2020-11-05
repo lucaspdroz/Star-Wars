@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import AtomCrawlText from '../AtomCrawlText'
 
-export default function Modal({ children }) {
+export default function Modal({ crawl, children, onClose = () => { } }) {
     return (
         <>
-            {/* <button onClick={() => setIsVisible(false)}>close</button> */}
+            <button onClick={onClose}>close</button>
             <div className="content">
                 {children}
+                <AtomCrawlText crawl={crawl} />
             </div>
-            {/* <AtomCrawlText crawl={crawl} /> */}
         </>
     )
 }

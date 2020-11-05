@@ -6,14 +6,13 @@ import AtomSeparator from '../AtomSeparator'
 import Modal from '../Modal'
 
 export const CardCharacter = ({ character }) => {
-
-    const [isVisible, setIsVisible] = useState(false);
+    const { char_img, name, actor, mass, birth_year, height, films } = character
 
     CardCharacter.defaultProps = {
         films: []
     }
 
-    const { char_img, name, actor, mass, birth_year, height, films } = character
+    const [isVisible, setIsVisible] = useState(false);
 
     function filmIsReady(movieData) {
         return movieData.map((film, i) => {
@@ -29,15 +28,16 @@ export const CardCharacter = ({ character }) => {
         <div className="card-character">
             <div className="bg-character" style={{ backgroundImage: `url(${char_img})` }}></div>
             <div className="fade"></div>
-            <AtomSeparator text={name} />
-            <AtomSeparator text={actor} />
+
+            <h1>{name}</h1>
+            <h2>{actor}</h2>
             <StatusSeparator mass={mass} birth_year={birth_year} height={height} className="item-content" />
             <AtomSeparator text="filmes" />
 
             <button onClick={() => setIsVisible(true)}>Open modal</button>
 
             {
-                isVisible ? <Modal><h1>Bla</h1></Modal> : null
+                isVisible ? <Modal onClose={() => setIsVisible(false)}><h1>Bla</h1></Modal> : null
             }
 
             <div className="movie-wrapper">
