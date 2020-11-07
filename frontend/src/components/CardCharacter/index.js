@@ -1,53 +1,57 @@
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import './character.scss'
 import Film from '../Film'
 import StatusSeparator from '../StatusSeparator'
-import AtomSeparator from '../AtomSeparator'
 import AtomCrawlText from '../AtomCrawlText'
 import Modal from '../Modal'
 
 export const CardCharacter = ({ character }) => {
+
     const { char_img, name, actor, mass, birth_year, height, films } = character
 
-    CardCharacter.defaultProps = {
-        films: []
-    }
+    const [hidden, setIsHidden] = useState(true);
+    const [filmModal, setfilmModal] = useState({});
 
-    const [isVisible, setIsVisible] = useState(false);
-
-    function filmIsReady(movieData) {
-        return movieData.map((film, i) => {
-            return (
-                <div key={i} className="movie-card">
-                    <Film film={film} />
-                </div>
-            )
-        })
-    }
+    const a = useCallback(
+        (film) => {
+            setIsHidden(false);
+            setfilmModal(film)
+        },
+        []
+    )
 
     return (
         <div className="card-character">
             <div className="bg-character" style={{ backgroundImage: `url(${char_img})` }}></div>
             <div className="char-fade"></div>
             <div className="character-stats">
-                <h1>{name}</h1>
-                <h2>{actor}</h2>
+                <h3 className="">{name}</h3>
+                <h2 className="">{actor}</h2>
             </div>
+
             <StatusSeparator mass={mass} birth_year={birth_year} height={height} className="item-content" />
-            <AtomSeparator text="filmes" />
 
-            <button onClick={() => setIsVisible(true)}>Open modal</button>
-
+            <h3>Films</h3>
             {
-                isVisible ? <Modal onClose={() => setIsVisible(false)}><AtomCrawlText title={films[0].title} id_chapter={films[0].id_chapter} crawl={films[0].crawl}></AtomCrawlText></Modal> : null
+                hidden ? null :
+                    (
+                        <Modal onClose={() => setIsHidden(true)}>
+                            <AtomCrawlText title={filmModal.title} id_chapter={filmModal.id_chapter} crawl={filmModal.crawl} />
+                        </Modal>
+                    )
             }
 
             <div className="movie-wrapper">
                 {
-                    films ? filmIsReady(films) : <p>Loading...</p>
+                    films.map((film, i) => {
+                        return (
+                            <div key={i} className="movie-card">
+                                <Film film={film} onClick={() => a(film)} />
+                            </div>
+                        )
+                    })
                 }
             </div>
-            <AtomSeparator text="Outros Personagens" />
-        </div >
+        </div>
     )
 }

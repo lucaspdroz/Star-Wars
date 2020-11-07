@@ -1,9 +1,9 @@
-import './style.scss'
+import './style.scss';
 
-const Button = ({ text, svg }) => {
+const Button = ({ svg, onClick }) => {
     return (
         <>
-            <button className="button">
+            <button className="button" onClick={onClick}>
                 <img className="btn-svg" src={svg} alt="" />
             </button>
         </>

@@ -7,11 +7,11 @@ export default function AtomCrawlText({ id_chapter, title, crawl }) {
             <div className="fade"></div>
             <section className="star-wars">
                 <div className="crawl">
+                    <p className="chapter">Episode {id_chapter}</p>
                     <div className="title">
-                        <p>{id_chapter}</p>
                         <h3>{title}</h3>
                     </div>
-                    <p>{crawl}</p>
+                    <p className="text">{crawl}</p>
                 </div>
             </section>
         </div>

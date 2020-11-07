@@ -24,45 +24,25 @@
     .crawl {
         position: relative;
         top: 99999px;
-        transform-origin: 50% 100%;
+        transform-origin: 10% 0%;
+        transform-origin: 50% 200%;
         animation: crawl 60s linear;
 
         .title {
             font-size: 90%;
             text-align: center;
-
-            h1 {
-                margin: 0 0 100px;
-                text-transform: uppercase;
-            }
+            text-transform: uppercase;
+            margin: 0 0 100px;
+        }
+        .chapter {
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .text {
+            line-height: 1.3em;
         }
     }
-
-    .bg-yellow {
-        color: black;
-        background-color: #feda4a;
-    }
 }
-
-/* Button */
-// .skip-button {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     bottom: 10px;
-//     left: 38vw;
-//     position: fixed;
-//     margin: auto;
-// }
-
-// .btn-big {
-//     width: 358px;
-//     height: 85px;
-//     border-radius: 100px;
-//     border: none;
-//     font-size: large;
-//     font-weight: bold;
-// }
 
 @keyframes crawl {
     0% {

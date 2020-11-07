@@ -3,7 +3,7 @@ import axios from 'axios';
 import { CardCharacter } from '../CardCharacter'
 
 const ListCharacter = () => {
-    const [listCharacters, setListCharacters] = useState({});
+    const [listCharacters, setListCharacters] = useState({films:[]});
 
     useEffect(() => {
         axios.get('http://localhost:3001/character')
