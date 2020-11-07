@@ -1,23 +1,21 @@
 import './style.scss';
-import AtomFilm from '../AtomFilm'
-import crawlSvg from '../../assets/crawl.svg'
+import AtomFilm from '../AtomFilm';
+import crawlSvg from '../../assets/crawl.svg';
 
-export default function Film({ film }) {
+export default function Film(props) {
+    const { film, onClick } = props;
 
-    const { title, cover, id_chapter, crawl } = film
+    const { title, cover, id_chapter } = film;
 
 
     return (
         <div className="film">
             <div>
                 <img className="banner" src={cover} alt={title} />
-                <AtomFilm svg={crawlSvg} />
+                <AtomFilm svg={crawlSvg} onClick={onClick} />
             </div>
             <h3 className="idChapter">{id_chapter}</h3>
             <h2 className="title">{title}</h2>
-
-            {/* <AtomCrawlText title={title} id_chapter={id_chapter} crawl={crawl} /> */}
-
         </div>
     )
 }

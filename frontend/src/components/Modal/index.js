@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
 import './style.scss';
 
-export default function Modal({ children, onClose = () => { } }) {
+export default function Modal(props) {
+    const { children, onClose } = props;
+
     return (
         <div className="modal">
             <div className="content">
-                <button onClick={onClose}>Pular você pode</button>
+                <button onClick={onClose}>Skip can you!</button>
                 {children}
             </div>
-        </div>
+        </div >
     )
 }
