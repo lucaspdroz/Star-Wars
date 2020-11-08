@@ -12,7 +12,7 @@ export const CardCharacter = ({ character }) => {
     const [hidden, setIsHidden] = useState(true);
     const [filmModal, setfilmModal] = useState({});
 
-    const a = useCallback(
+    const changeModalVisibility = useCallback(
         (film) => {
             setIsHidden(false);
             setfilmModal(film)
@@ -46,7 +46,7 @@ export const CardCharacter = ({ character }) => {
                     films.map((film, i) => {
                         return (
                             <div key={i} className="movie-card">
-                                <Film film={film} onClick={() => a(film)} />
+                                <Film film={film} onClick={() => changeModalVisibility(film)} />
                             </div>
                         )
                     })
