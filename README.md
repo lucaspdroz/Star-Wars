@@ -81,8 +81,15 @@ yarn start
 ```
 
 <div align="center">
-<h4>Contact me 😉</h4>
-
-![twetter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FLucaspdroz)
+<h2>Contact me 😉</h2>
+<p align="center"> <img src="https://i1.wp.com/slfgchurch.com/wp-content/uploads/2019/08/lets-connect-1.png?ssl=1" alt="connect" width="20%" height="10%"> </p>
+<p align="center">
+<a href="https://linkedin.com/in/lucaspdroz" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="lucaspdroz" height="30" width="30" /></a>
+<a href="https://twitter.com/lucaspdroz" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="lucaspdroz" height="30" width="30" /></a>
+<a href="https://fb.com/lucaspdroz" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="lucaspdroz" height="30" width="30" /></a>
+<a href="mailto:lucaspdroz@gmail.com" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="lucaspdroz" height="30" width="30" /></a>
+<!-- <a href="https://dribbble.com/lucaspdroz" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dribbble.svg" alt="lucaspdroz" height="30" width="30" /></a> -->
+<!-- <a href="https://medium.com/@lucaspdroz" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg" alt="@lucaspdroz" height="30" width="30" /></a> -->
+</p>
 
 </div>
